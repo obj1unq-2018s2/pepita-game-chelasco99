@@ -1,3 +1,4 @@
+
 import pepita.*
 import ciudades.*
 import comidas.*
@@ -21,10 +22,7 @@ program PepitaGame {
 	game.addVisual(pepita)
 
 // COLISIONES
-    game.whenCollideDo(roque, { manzana => manzana.esComida() })
-    game.whenCollideDo(roque, { alpiste => alpiste.esComida() })
-   	game.whenCollideDo(roque, { manzana => roque.agarraComida(manzana)})	
-	
+	game.whenCollideDo(roque, { algo => algo.teEncontro(roque) })
 
 //	TECLADO
 	keyboard.v().onPressDo { pepita.volaHacia(villaGesell) }

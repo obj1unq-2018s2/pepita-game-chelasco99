@@ -1,7 +1,7 @@
 import ciudades.*
 
 object pepita {
-	var property energia = 200
+	var property energia = 100
 	var property ciudad = buenosAires 
 
 	var property posicion = game.at(3,3)
@@ -39,5 +39,10 @@ object pepita {
 	   } 
 	   else { game.say(self, "Dame de comer primero!") }
   }	
+  
+  method teEncontro(algo) {
+  	algo.alimentarA(self)
+  }
+ 
 	
 }
