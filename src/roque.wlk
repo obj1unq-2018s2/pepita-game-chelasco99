@@ -19,7 +19,7 @@ object roque {
 		tengoComida = comida
 	}
 	
-	method alimentarA(ave) {
+	method alimentaA(ave) {
 		if ( tengoComida != null ) {
 			ave.come(tengoComida)
 		}

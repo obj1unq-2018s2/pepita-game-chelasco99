@@ -41,7 +41,7 @@ object pepita {
   }	
   
   method teEncontro(algo) {
-  	algo.alimentarA(self)
+  	algo.alimentaA(self)
   }
  
 	
