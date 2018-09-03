@@ -22,6 +22,7 @@ object roque {
 	method alimentaA(ave) {
 		if ( tengoComida != null ) {
 			ave.come(tengoComida)
+			game.addVisualIn(tengoComida, game.at(0.randomUpTo(10),0.randomUpTo(10)))
 		}
 		tengoComida = null
 	}
